@@ -13,14 +13,15 @@ Feature and Target Separation: The dataset was split into features (X) and the t
 Train-Test Split: The data was divided into training and testing sets to evaluate model performance on unseen data.
 2. Model Training
 Model: An XGBoost Classifier was chosen for its robust performance with tabular data and ability to handle categorical features. The model was initialized with random_state=2 and enable_categorical=True.
+
 Training: The model was trained on the X_train and y_train datasets.
-3. Model Evaluation
+4. Model Evaluation
 Accuracy: The model's performance was evaluated using accuracy_score on both the training and test datasets. The test accuracy achieved was approximately 88.5%.
-4. Feature Importance
+5. Feature Importance
 Feature importances were calculated and visualized to understand which factors contribute most significantly to the loan default prediction. 'Age' and 'InterestRate' were identified as among the most important features.
-5. Prediction System
+6. Prediction System
 A prediction system was implemented to demonstrate how the trained model can be used to predict the default status for new input data.
-6. Model Persistence
+7. Model Persistence
 The trained XGBoost model was saved using pickle for future use, allowing for deployment without retraining.
 Libraries Used
 pandas
